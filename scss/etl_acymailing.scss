@@ -1,0 +1,209 @@
+.etl-acy-newsletter {
+
+  .etl-acy-placeholder-defaut {
+		input[type="text"]::-webkit-input-placeholder {color: lighten($base-text-color, 15%) !important;}
+		input[type="text"]::-moz-placeholder {color: lighten($base-text-color, 15%) !important;}
+		input[type="text"]:-ms-input-placeholder {color: lighten($base-text-color, 15%) !important;}
+  	}
+ 	.etl-acy-placeholder-clear {
+		input[type="text"]::-webkit-input-placeholder {color: lighten($black, 50%) !important;}
+		input[type="text"]::-moz-placeholder {color: lighten($black, 50%) !important;}
+		input[type="text"]:-ms-input-placeholder {color: lighten($black, 50%) !important;}
+  	}
+ 	.etl-acy-placeholder-dark {
+		input[type="text"]::-webkit-input-placeholder {color: lighten($white, 40%) !important;}
+		input[type="text"]::-moz-placeholder {color: lighten($white, 40%) !important;}
+		input[type="text"]:-ms-input-placeholder {color: lighten($white, 40%) !important;}
+  	}
+  
+	.etl-acy-newsletter-form {
+        white-space: nowrap;
+    }
+    h2 {margin-bottom: 0.1rem;
+    }
+    .etl-acy-newsletter-headtext {
+        margin-bottom: 1rem;
+    }
+    .etl-acy-newsletter-foottext {
+    margin-top: 1rem;
+    }
+ 	.etl-acy-border-radius-0 {
+       input[type="text"], input[type="submit"] { 
+       border-radius: 0 !important;
+       }
+  	}
+ 	.etl-acy-border-radius-defaut {
+       input[type="text"], input[type="submit"] { 
+        border-radius: $core-border-radius !important;
+       }
+  	}
+ 	.etl-acy-border-radius-1rem {
+       input[type="text"], input[type="submit"] { 
+        border-radius: 1rem !important;
+       }
+  	}
+    .etl-acy-newsletter-inputboxemail-1,.etl-acy-newsletter-inputboxemail-2, .etl-acy-newsletter-inputboxname-2, .etl-acy-newsletter-button-1, .etl-acy-newsletter-button-2 {
+        height: 40px;
+    }
+    .etl-acy-newsletter-inputboxemail-1 {
+        color: $base-text-color;
+        background-color: darken($base-background, 10%);
+        border: 0;
+        display: inline-block;
+        padding: 0.7rem 1.25rem;
+        width: 73%;
+        margin-right: 0.25rem;
+        vertical-align: top;
+        box-shadow: none;   
+        @include breakpoint(tablet-range) {
+            padding: 0.7rem 0.5rem;
+            width: 53%;
+        }
+    }
+    .etl-acy-newsletter-inputboxemail-compact-text {
+        color: $base-text-color;
+        background-color: darken($base-background, 10%);
+        border: 0;
+		border-radius: 0;
+		height: 40px;
+        display: inline-block;
+        padding: 0.7rem 1.25rem;
+        width: 75%;
+        margin-right: 0rem;
+        vertical-align: top;
+        box-shadow: none;   
+        @include breakpoint(tablet-range) {
+            padding: 0.7rem 0.5rem;
+            width: 60%;
+        }
+    }
+    .etl-acy-newsletter-inputboxname-2, .etl-acy-newsletter-inputboxemail-2 {
+        color: $base-text-color;
+        background-color: darken($base-background, 10%);
+        border: 0;
+        display: inline-block;
+        padding: 0.7rem 1.25rem;
+        width: 36%;
+        margin-right: 0.25rem;
+        vertical-align: top;
+        box-shadow: none;   
+        @include breakpoint(tablet-range) {
+            padding: 0.7rem 0.5rem;
+            width: 35%;
+        }
+        @include breakpoint(mobile-only) {
+            width: 100%;
+            display:block;
+        }   
+    }
+    .etl-acy-newsletter-button-1 {
+        width: 25%;
+		height: 40px;
+        padding-left: inherit;
+        padding-right: inherit;
+        @include breakpoint(tablet-range) {
+            padding: 0.7rem 0.5rem;
+            width: 40%;
+        }   
+    }
+    .etl-acy-newsletter-button-compact-text {
+        width: 25%;
+		border-radius: 0;
+		height: 40px;
+        padding-left: inherit;
+        padding-right: inherit;
+		margin-left: -4px;
+             @include breakpoint(mobile-only) {
+             margin-left: 0px;
+        }   
+        @include breakpoint(tablet-range) {
+            padding: 0.7rem 0.5rem;
+            width: 40%;
+        }   
+    }
+    .etl-acy-newsletter-button-2 {
+        width: 25%;
+		height: 40px;
+        padding-left: inherit;
+        padding-right: inherit;
+        @include breakpoint(tablet-range) {
+            padding: 0.7rem 0.5rem;
+            width: 30%;
+        }
+        @include breakpoint(mobile-only) {
+            width: 100%;
+            display:block;
+        }   
+    }
+    .etl-acy-newsletter-inputboxemail-compact, .etl-acy-newsletter-button-compact {
+        input,
+        .g-newsletter-button-submit {
+            height: 40px;
+            width:100%;
+            border-radius: 0;
+			margin-left: -4px;
+            box-shadow: none;
+            font-size: $core-font-size - 0.125;
+        }
+    }
+    .etl-acy-newsletter-inputboxemail-compact {
+        input {
+      color: $base-background;
+            border: 2px solid fade-out($white, 0.75);
+            background: transparent;
+            padding: 0 $content-padding;
+            margin-bottom: 0;
+        }
+    }
+     .etl-acy-newsletter-compact-wrapper {
+         @include display(flex);
+         @include flex-flow(row wrap);
+         @include flex-wrap(wrap);
+         .etl-acy-newsletter-inputboxemail-compact,
+         .etl-acy-newsletter-button-compact {
+             @include flex(1 1 auto);
+             min-width: 0;
+             min-height: 0;
+             margin: 0;
+         }
+            .etl-acy-newsletter-inputboxemail-compact {
+                width: 75%;
+         }
+     }
+     .etl-acy-newsletter-compact-wrapper {
+         .etl-acy-newsletter-button-compact {
+             margin-left: -4px;
+             //@include breakpoint(mobile-only) { margin-left: 0px;}   
+     }
+      .etl-acy-newsletter-button-compact-icon {
+          i {
+             line-height: 40px;
+            }
+         }
+     }
+     .etl-acy-newsletter-button-compact {
+     .etl-acy-newsletter-button-compact-submit {
+         color: $white;
+         margin-bottom: 0;
+         display: block;
+         text-align: center;
+        }
+     .etl-acy-newsletter-button-compact-icon {
+         color: $white;
+         border:0;
+         i {
+             font-size: $core-font-size + 0.25;
+             line-height: 40px;
+             vertical-align: middle;
+            }
+        }
+    }
+    .etl-acy-newsletter-button-compact-submit input[type="submit"] {
+       font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", FontAwesome;
+       display: inline-block;
+       text-rendering: auto;
+       font-size: 1.3rem;
+       line-height: 30px;
+       vertical-align: middle;
+    }
+}

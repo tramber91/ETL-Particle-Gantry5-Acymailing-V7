@@ -1,0 +1,1 @@
+# ETL-Particle-Gantry5-Acymailing-V7 compatible Joomla 4 Gantry 5.5

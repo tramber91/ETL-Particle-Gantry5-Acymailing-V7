@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="1.0">
+    <name>ETL particle G5 Acymailing V7</name>
+    <version>7.0</version>
+    <creationDate>31.12.2021</creationDate>
+    <author>Bertrand Pascal - En Toutes Lettres</author>
+    <authorEmail>webmaster@en-toutes-lettres.fr</authorEmail>
+    <authorUrl>https://www.en-toutes-lettres.fr</authorUrl>
+    <copyright>© 2017 En Toutes Lettres</copyright>
+    <license>MIT - see LICENSE.pdf</license>
+    <packager>En toutes lettres</packager>
+    <packagerurl>https://www.en-toutes-lettres.fr</packagerurl>
+    <description>
+        <![CDATA[<h3>Particle "Acymailing V7" for Gantry 5.5 v7.0 - Template Hydrogen</h3>
+		<h4>By En Toutes Lettres (https://www.en-toutes-lettres.fr)</h4>
+		<h4>Don't forget to add these 2 lines</h4>
+		<h3><span style="color:#0000FF">@import 'dependencies';</span></h3>
+		<h3><span style="color:#0000FF">@import 'etl_acymailing';</span></h3>
+		<h4>in your custom SCSS file, custom.scss (/templates/g5_hydrogen/custom/scss/custom.scss)</h4>
+        <h4>or create this file and add these 2 lines with your text editor (/templates/g5_hydrogen/custom/scss/custom.scss)</h4>]]>
+    </description>
+    <fileset>
+        <files folder="particles" target="templates/g5_hydrogen/custom/particles"><filename>etl_acymailing.html.twig</filename><filename>etl_acymailing.yaml</filename></files>
+		<files folder="scss" target="templates/g5_hydrogen/custom/scss"><filename>etl_acymailing.scss</filename></files>
+    </fileset>
+</extension>
